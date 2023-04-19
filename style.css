@@ -1,3 +1,7 @@
+body {
+	margin: 0;
+	padding: 0;
+}
 
 .prelanding {
   background-color: #f1f0ed; 
@@ -380,7 +384,7 @@
   }
 
   .cards {
-    justify-content: space-around;
+    /* justify-content: space-around; */
     margin-top: 24px;
     padding-bottom: 0px;
   }
@@ -493,7 +497,7 @@
   }
   
   .cards {
-    justify-content: space-around;
+    /* justify-content: space-around; */
     margin-top: 46px;
   }
   
@@ -547,5 +551,3 @@
     margin-right: 16px;
   }
 }
-
-
