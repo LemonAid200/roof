@@ -3,6 +3,12 @@
 body {
 	margin: 0;
 	padding: 0;
+
+}
+
+
+.main-content-inputs {
+  flex-direction: column;
 }
 
 .phone {
@@ -165,7 +171,7 @@ body {
 
 .main-content__text--bold {
   font-weight: 700;
-  margin-bottom: 38px;
+  margin-bottom: 30px;
 }
 
 .main-content__button {
@@ -337,6 +343,7 @@ body {
   }
   
   .main-content__text--bold {
+    margin-top: 16px;
     margin-bottom: 39px;
   }
   
@@ -373,6 +380,12 @@ body {
   .gallery {
     padding: 0px 21vw;
   }
+
+  .main-content-inputs {
+    flex-direction: row;
+  }
+
+  /* TODO add input and button adaptive */
 }
 
 @media screen and (min-width: 1200px) {
@@ -381,7 +394,11 @@ body {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
+    background-image: url('./background\ \(1\).svg'), url('/background\ \(2\).svg');
+    background-repeat: no-repeat;
   }
+
+
 
   .phone{
     height: 54px;
@@ -435,8 +452,9 @@ body {
 
   .main-content__text--bold {
     /* display: flex; */
+    margin-top: 16px;
     align-items: center;
-    height: 50px;
+    height: 36px;
     /* float: right; */
     font-weight: 700;
     margin-bottom: 19px;
@@ -563,9 +581,11 @@ body {
   }
 
   .main-content__text--bold {
-    /* height: 72px; */
+    height: 36px;
+    margin-top: 16px;
+
     font-weight: 700;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
   
   .main-content__button {
