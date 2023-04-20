@@ -9,7 +9,7 @@ body {
   align-items: center;
   padding: 21px 24px;
   gap: 10px;
-  
+  display: flex;
   font-family: 'Montserrat',Arial,sans-serif;
   width: 100%;
   max-width: 442px;
@@ -26,8 +26,32 @@ body {
   cursor: pointer;
   font-size: 18px;
   background: #FFFFFF;
-  margin-left: ;
+  margin-right: 16px;
+  padding-left: 24px;
 } 
+
+.phone select {
+  height: 90%;
+  border: none;
+}
+
+.phone input {
+  border: none;
+  height: 90%;
+  width: 300px;
+}
+
+.phone input::placeholder{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  /* identical to box height */
+  
+  
+  color: #999999;
+}
 
 .main-content-inputs {
   display: flex;
