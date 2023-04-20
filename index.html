@@ -137,8 +137,18 @@
 
 var input = document.querySelector("#phone");
 window.intlTelInput(input, {
-  separateDialCode: true
+  separateDialCode: true,
+  preferredCountries: ["ru"],
 });
+
+document.querySelector('.iti__selected-dial-code').style.display = 'none'
+document.querySelector('.phone').style.paddingRight = '0px'
+let phoneBlock = document.querySelector('.iti')
+phoneBlock.style.width = '-webkit-fill-available'
+phoneBlock.style.paddingRight = '16px'
+document.querySelector('.iti__selected-flag').style.background = 'none'
+
+
 </script>
 <!-- Marquiz script end -->
 
