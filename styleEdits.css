@@ -394,8 +394,9 @@ body {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    background-image: url('./background\ \(1\).svg'), url('/background\ \(2\).svg');
+    background-image: url('background-one.svg'), url('background-two.svg');
     background-repeat: no-repeat;
+    background-position-x: 0, 10%;
     background-position-x: 0, 10%;
   }
 
