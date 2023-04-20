@@ -139,6 +139,7 @@ var input = document.querySelector("#phone");
 window.intlTelInput(input, {
   separateDialCode: true,
   preferredCountries: ["ru"],
+  excludeCountries: []
 });
 
 document.querySelector('.iti__selected-dial-code').style.display = 'none'
@@ -146,7 +147,35 @@ document.querySelector('.phone').style.paddingRight = '0px'
 let phoneBlock = document.querySelector('.iti')
 phoneBlock.style.width = '-webkit-fill-available'
 phoneBlock.style.paddingRight = '16px'
+
 document.querySelector('.iti__selected-flag').style.background = 'none'
+document.querySelector('.iti__selected-flag').style.marginLeft = '14px'
+document.querySelector('.iti__flag-container').style.marginRight = '14px'
+
+
+document.querySelector('.iti__arrow').style.border = 'none'
+
+const img = document.createElement("img");
+img.src = "arrowSelect.svg";
+let arrowWrapper = document.querySelector('.iti__arrow')
+arrowWrapper.style.display = 'contents'
+arrowWrapper.style.marginLeft = '8px'
+arrowWrapper.appendChild(img)
+arrowWrapper.querySelector('img').style.marginLeft = '12px'
+arrowWrapper.querySelector('img').style.transition = 'all ease 200ms'
+
+let isSelectOpen = false
+document.querySelector('body').addEventListener('click', event => {
+  if (!isSelectOpen && (event.target.classList.contains('iti__flag') || event.target.classList.contains('iti__selected-flag'))){
+    arrowWrapper.querySelector('img').style.transform = 'rotate(180deg)'
+    isSelectOpen = true
+    arrowWrapper.querySelector('img').style.marginRight = '12px'
+  } else {
+    isSelectOpen = false
+    arrowWrapper.querySelector('img').style.transform = 'rotate(0deg)'
+  }
+})
+
 
 
 </script>
