@@ -15,27 +15,25 @@ body {
   align-items: center;
   padding: 21px 24px;
   gap: 10px;
-  display: flex;
+  /* display: flex; */
+  display: block;
   font-family: 'Montserrat',Arial,sans-serif;
   width: 100%;
   max-width: 442px;
   height: 72px;
-  /* color: #fff; */
-  /* background-color: #D84927; */
-  /* border-radius: 10px; */
   font-weight: 500;
   line-height: 28px;
   border: none;
-  padding: 0;
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
   font-size: 18px;
   background: #FFFFFF;
-  margin-right: 16px;
+  /* margin-right: 16px; */
   padding-right: 16px;
   padding-left: 24px;
 } 
+
 
 .phone select {
   height: 90%;
@@ -64,16 +62,6 @@ body {
   display: flex;
 }
 
-.iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
-  /* padding-right: 6px; */
-  /* padding-left: 52px; */
-  margin-left: 0;
-}
-
-/* .gallery_container_wrapper {
-  width: 46%;
-  background: red;
-} */
 
 /* Here starts origin part
 	Only commented space-between for cards
@@ -96,7 +84,7 @@ body {
 .header {
   display: flex;
   margin: 0 0 13px 0;
-  padding-top: 22px;
+  padding-top: 12px;
   justify-content: space-between;
 
 }
@@ -298,8 +286,8 @@ body {
 
 @media screen and (min-width: 640px) {
   .header {
-    margin: 0 0 21px 0;
-    padding-top: 25px;
+    margin: 0 0 15px 0;
+    padding-top: 8px;
   }
   
   .header__left {
@@ -409,7 +397,7 @@ body {
   .header {
     position: relative;
     margin: 0 5px 10px 0;
-    padding-top: 16px;
+    padding-top: 8px;
     align-items: flex-center;
   }
   
@@ -559,7 +547,7 @@ body {
   }
   
   .header {
-    padding-top: 40px;
+    padding-top: 10px;
     margin: 0 5px 22px 0;
   }
   
