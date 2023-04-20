@@ -41,7 +41,7 @@ body {
   width: 300px;
 }
 
-.phone input::placeholder{
+.phone::placeholder{
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
