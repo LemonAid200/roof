@@ -358,12 +358,20 @@ body {
     top: 215px;
     padding: 0 89px;
     position: absolute;
+    margin-top: 75px;
+  }
+}
+
+@media screen and (min-width: 740px){
+  .gallery{
+    margin-top: 0px;
   }
 }
 
 @media screen and (min-width: 860px) {
   .gallery {
     padding: 0px 21vw;
+    margin-top: 75px;
   }
 
   .main-content-inputs {
@@ -377,6 +385,12 @@ body {
     margin-top: 58px;
   }
 
+}
+
+@media screen and (min-width: 1040px) {
+  .gallery {
+    margin-top: -10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
