@@ -145,14 +145,34 @@ window.intlTelInput(input, {
 document.querySelector('.iti__selected-dial-code').style.display = 'none'
 document.querySelector('.phone').style.paddingRight = '0px'
 let phoneBlock = document.querySelector('.iti')
-phoneBlock.style.width = '-webkit-fill-available'
-phoneBlock.style.paddingRight = '16px'
+
+phoneBlock.style.width = '100%'
+// phoneBlock.style.paddingRight = '16px'
+resizePhoneBlock()
+phoneBlock.style.margin = '0 auto'
+window.addEventListener('resize', () => {
+
+  resizePhoneBlock()
+  // phoneBlock.style.width = document.querySelector('.main-content__button').offsetWidth
+})
+
+function resizePhoneBlock(){
+  if (window.innerWidth < 640) {
+    phoneBlock.style.maxWidth = '442px'
+  } else if (window.innerWidth < 860){
+    phoneBlock.style.maxWidth = '460px'
+  }
+
+  if (window.innerWidth > 1200) {
+    phoneBlock.style.paddingRight = '16px'
+  } else {
+    phoneBlock.style.paddingRight = '0px'
+  }
+}
 
 document.querySelector('.iti__selected-flag').style.background = 'none'
 document.querySelector('.iti__selected-flag').style.marginLeft = '14px'
 document.querySelector('.iti__flag-container').style.marginRight = '14px'
-
-
 document.querySelector('.iti__arrow').style.border = 'none'
 
 const img = document.createElement("img");

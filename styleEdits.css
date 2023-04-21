@@ -19,7 +19,7 @@ body {
   display: block;
   font-family: 'Montserrat',Arial,sans-serif;
   width: 100%;
-  max-width: 442px;
+  max-width: 460px;
   height: 72px;
   font-weight: 500;
   line-height: 28px;
@@ -32,6 +32,7 @@ body {
   /* margin-right: 16px; */
   padding-right: 16px;
   padding-left: 24px;
+  margin: 0 auto;
 } 
 
 
@@ -385,7 +386,7 @@ body {
     background-image: url('background-one.svg'), url('background-two.svg');
     background-repeat: no-repeat;
     background-position-x: 0, 10%;
-    background-position-x: 0, 10%;
+    background-size: contain;
   }
 
 
