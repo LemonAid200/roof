@@ -199,6 +199,7 @@ body {
   max-width: 100%;
   padding-left: 5px;
   padding-bottom: 22px;
+  margin-bottom: 40px;
 }
 
 .cards::-webkit-scrollbar {
@@ -340,12 +341,7 @@ body {
     max-width: 460px;
   }
   
-  .cards {
-    overflow-x: unset;
-    padding-left: 0;
-    justify-content: space-between;
-    margin-top: 58px;
-  }
+
   .card {
     height: auto;
     margin-right: 10px;
@@ -374,7 +370,13 @@ body {
     flex-direction: row;
   }
 
-  /* TODO add input and button adaptive */
+  .cards {
+    overflow-x: unset;
+    padding-left: 0;
+    justify-content: space-between;
+    margin-top: 58px;
+  }
+
 }
 
 @media screen and (min-width: 1200px) {
